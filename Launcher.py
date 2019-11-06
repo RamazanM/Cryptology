@@ -1,4 +1,4 @@
-from Algorithms import Caesar,Affine,Substitution
+from Algorithms import Caesar,Affine,Substitution,Route
 import os
 selected_alphabet="TR"
 selected_algorithm=Caesar
@@ -37,6 +37,7 @@ def select_algorithm():
     print("1.Caesar Algorithm (Sezar şifrelemesi)")
     print("2.Affine Algorithm (Doğrusal şifreleme)")
     print("3.Substitution Algorithm (Yerine Koyma şifrelemesi)")
+    print("4.Route Algorithm (Yönlendirme şifrelemesi)")
     selection=input("Please select an algorithm:")
     if selection=="1":
         selected_algorithm = Caesar
@@ -44,6 +45,8 @@ def select_algorithm():
         selected_algorithm = Affine
     elif selection=="3":
         selected_algorithm = Substitution
+    elif selection=="4":
+        selected_algorithm = Route
     os.system('cls')
 def select_alphabet():
     global selected_alphabet
