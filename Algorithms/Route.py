@@ -51,11 +51,6 @@ def decrypt_menu(self):
 
     print("Decrypted text is:\n"+self.decrypt(self,text,row_len))
 
-def rotate_matrix( m ):
-    return [[m[j][i] for j in range(len(m))] for i in range(len(m[0])-1,-1,-1)]
-def rotate_matrix_rev( m ):
-    return rotate_matrix(rotate_matrix(rotate_matrix(m)))
-
 if __name__ == "__main__":
     print("Please run Launcher.py")
     pass
