@@ -57,6 +57,8 @@ def find_inverse(a):
     for i in range(len(alphabet)):
         if (a*i)%len(alphabet)==1:
             return i
+
+            
 if __name__ == "__main__":
     print("Please run Launcher.py")
     pass
